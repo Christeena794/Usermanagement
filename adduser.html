@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>add user</title>
+ <!-- <link href="css/adduser.css" rel="stylesheet"> -->
+ <style>
+ * {
+box-sizing: border-box;
+}
+
+body {
+margin: 0px;
+font-family: 'segoe ui';
+}
+
+.nav {
+height: 50px;
+width: 100vw;
+background-color: #4d4d4d;
+}
+
+.nav > .nav-header {
+display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+display: inline-block;
+font-size: 22px;
+color: #fff;
+padding: 10px 10px 10px 130px;
+}
+/* image section*/
+
+
+.formdiv{
+ display: flex;
+}
+.container {
+ padding: 5px 10px 10px 125px;
+ }
+.details{
+ padding: 5px 10px 10px 5px;
+}
+
+.img{
+ width: 45%;
+ clip-path: circle();
+
+}
+
+#form {
+ max-width: 2500px;
+ padding: 2rem;
+ box-sizing: border-box;
+}
+
+.form-field {
+ display: flex;
+ margin: 0 0 1rem 0;
+}
+label, input {
+ width: 70%;
+ padding: 0.5rem;
+ box-sizing: border-box;
+ justify-content: space-between;
+ font-size: 1.1rem;
+}
+label {
+ text-align: right;
+ width: 30%;
+}
+input {
+ border: 2px solid #aaa;
+ border-radius: 2px;
+}
+</style> 
+</head>
+
+
+<body>
+
+   <!--navigation bar-->
+<div>
+ <div class="nav"> 
+   <div class="nav-header">
+     <div class="nav-title">
+       USER MANAGEMENT
+     </div>
+   </div>
+ </div>
+
+<!--user form --> 
+<div>
+  <div class="formdiv">
+   <div class="container">
+       <img src="img_avatar.png" class="img">
+       <div class="details"><h4><b>John Doe</b></h4>
+       </div>
+   </div>
+
+
+   <div class="formdetails">
+     <form method="post" action="/" id="form" class="validate">
+       <div class="form-field">
+         <label for="first-name">First Name</label>
+         <input type="text" name="first-name" id="first-name" placeholder="enter your name" required />
+       </div>
+       <div class="form-field">
+         <label for="last-name">Last Name</label>
+         <input type="text" name="last-name" id="last-name" placeholder="enter last name required />
+       </div>
+       <div class="form-field">
+         <label for="email-input">Email</label>
+         <input type="email" name="email-input" id="email-input" placeholder="example@domain.com" required />
+       </div>
+       <div class="form-field">
+         <label for="place-input">Place</label>
+         <input type="text" name="place" id="place-input" placeholder="enter your place" required />
+       </div>
+       <div class="form-field">
+         <label for="education-input">Place</label>
+         <input type="text" name="education" id="education-input" placeholder="enter your education" required />
+       </div>
+       <div class="form-field">
+         <label for=""></label>
+         <input type="submit" value="Sign Up" />
+       </div>
+       <div class="submit"><a href="adduser.html"><button type="submit" class="btn" >Save </button></a></div>
+     </form>
+   </div>
+ </div>
+</div>
+
+
+      
+</body>
+</html>
+
