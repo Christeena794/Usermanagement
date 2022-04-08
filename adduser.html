@@ -39,10 +39,10 @@ padding: 10px 10px 10px 130px;
  display: flex;
 }
 .container {
- padding: 5px 10px 10px 125px;
+ padding: 65px 10px 10px 200px;
  }
 .details{
- padding: 5px 10px 10px 5px;
+ padding: 8px 10px 10px 85px;
 }
 
 .img{
@@ -52,30 +52,63 @@ padding: 10px 10px 10px 130px;
 }
 
 
-#form {
- max-width: 2500px;
- padding: 2rem;
- box-sizing: border-box;
+
+
+.cont {
+ padding: 50px 50px 10px 30px;
+ background-color: white;
 }
 
-.form-field {
- display: flex;
- margin: 0 0 1rem 0;
+/* Full-width input fields */
+input[type=text], input[type=password] {
+ width: 100%;
+ padding: 15px;
+ margin: 5px 0 22px 0;
+ display: inline-block;
+ border: none;
+ background: #f1f1f1;
 }
-label, input {
- width: 70%;
- padding: 0.5rem;
- box-sizing: border-box;
- justify-content: space-between;
- font-size: 1.1rem;
+
+input[type=text]:focus, input[type=password]:focus {
+ background-color: #ddd;
+ outline: none;
 }
-label {
- text-align: right;
- width: 30%;
+
+/* Set a style for the submit button */
+.cancelbtn {
+ background-color: #04AA6D;
+ color: white;
+ padding: 16px 20px;
+ margin: 8px 0;
+ border: none;
+ cursor: pointer;
+ width: 40%;
+ opacity: 0.9;
 }
-input {
- border: 2px solid #aaa;
- border-radius: 2px;
+
+.cancelbtn:hover {
+ opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+ color: dodgerblue;
+}
+
+
+.savebtn {
+ background-color: #04AA6D;
+ color: white;
+ padding: 16px 20px;
+ margin: 8px 0;
+ border: none;
+ cursor: pointer;
+ width: 40%;
+ opacity: 0.9;
+}
+
+.savebtn:hover {
+ opacity: 1;
 }
 
 
@@ -96,48 +129,44 @@ input {
  </div>
 
 <!--user form --> 
+<!--user form --> 
 <div>
-  
   <div class="formdiv">
    <div class="container">
-       <img src="img_avatar.png" class="img">
-       <div class="details"><h4><b></b></h4>
+       <img src="img_avatar2.png" class="img">
+       <div class="details"><h4><b>Add Details</b></h4>
        </div>
    </div>
 
 
    <div class="formdetails">
-     <form method="post" action="/" id="form" class="validate">
-       <div class="form-field">
-         <label for="first-name">First Name</label>
-         <input type="text" name="first-name" id="first-name" placeholder="enter your name" required />
+     <form >
+       <div class="cont">
+    
+         <label for="name"><b>Name</b></label>
+         <input type="text" placeholder="Enter name" name="name" id="name" required>
+    
+         <label for="psw"><b>Email</b></label>
+         <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+         <label for="psw-repeat"><b> Place</b></label>
+         <input type="text" placeholder="Enter Place" name="Enter Place" id="Enter Place" required>
+        
+    
+        <a href="index.html"> <button type="submit" class="cancelbtn">cancel</button></a>
+         <button type="submit" class="savebtn">save</button>
        </div>
-       <div class="form-field">
-         <label for="last-name">Last Name</label>
-         <input type="text" name="last-name" id="last-name" placeholder="enter last name required />
-       </div>
-       <div class="form-field">
-         <label for="email-input">Email</label>
-         <input type="email" name="email-input" id="email-input" placeholder="example@domain.com" required />
-       </div>
-       <div class="form-field">
-         <label for="place-input">Place</label>
-         <input type="text" name="place" id="place-input" placeholder="enter your place" required />
-       </div>
-       <div class="form-field">
-         <label for="education-input">Place</label>
-         <input type="text" name="education" id="education-input" placeholder="enter your education" required />
-       </div>
-       <div class="form-field">
-         <label for=""></label>
-         <input type="submit" value="Sign Up" />
-       </div>
-       <div class="submit"><a href="user1.html"><button type="submit" class="btn" >Save </button></a></div>
+      
+     
      </form>
+    
    </div>
  </div>
 </div>
+
+
       
 </body>
 </html>
+
 
